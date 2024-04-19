@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="rows" id="rows">
+        <div class="header">
+            <button class="text">BOX WITH SHADOW</button>
+            <div class="headerButtons">
+                <button class="cssCodeBtn" id="cssCodeBtn">CSS CODE</button>
+                <button class="gitBtn" id="gitBtn">GITHUB</button>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="leftSideBar">
+                <div class="btnPlace">
+                    <button class="shadowBtn" id="shadowBtn">CUSTUMIZE SHADOWw</button>
+                </div>
+
+                <div></div>
+
+                <div class="btnPlace">
+                    <button class="settingBtn" id="settingBtn">CUSTUMIZE BOX</button>
+                </div>
+            </div>
+
+            <div class="workSpace">
+                <div class="object" id="box"></div>
+                <div class="valuesPanel" id="valuesPanel">
+
+                    <div class="shadowSizeValue valuesPanelBtn valuesPanel" id="shadowSizeValueBtn">
+
+                        <input type="range" min="0" max="100" class="shadowSize" id="shadowSizeRange">
+                        <input type="text" class="input" id="shadowSize" value="0">
+
+                    </div>
+
+                    <div class="shadowColorValue valuesPanelBtn valuesPanel" id="shadowColorValueBtn">
+
+                        <input type="color" class="shadowColor" id="shadowColor">
+
+                    </div>
+
+                    <div class="shadowBlurValue valuesPanelBtn valuesPanel" id="shadowBlurValueBtn">
+
+                        <input type="range" min="0" max="100" class="shadowBlur" id="shadowBlurRange">
+                        <input type="text" class="input" id="shadowBlur" value="50">
+
+                    </div>
+
+                    <div class="shadowPositionValue valuesPanelBtn valuesPanel" id="shadowPositionValueBtn">
+
+                        <input type="range" min="-100" max="100" class="shadowPositionX" id="shadowPositionXRange">
+                        <input type="text" class="input" id="shadowPositionX" value="0">
+
+                        <input type="range" min="-100" max="100" class="shadowPositionY" id="shadowPositionYRange">
+                        <input type="text" class="input" id="shadowPositionY" value="0">
+
+                    </div>
+
+
+                    <div class="boxSizeValue valuesPanelBtn valuesPanel" id="boxSizeValueBtn">
+
+                        <input type="range" min="0" max="500" class="boxWidthRange" id="boxWidthRange">
+                        <input type="text" class="input" id="boxWidth" value="250">
+
+                        <input type="range" min="0" max="500" class="boxHeightRange" id="boxHeightRange">
+                        <input type="text" class="input" id="boxHeight" value="250">
+
+                    </div>
+
+                    <div class="boxColorValue valuesPanelBtn valuesPanel" id="boxColorValueBtn">
+
+                        <input type="color" value="#ffffff" class="boxColor" id="boxColor">
+
+                    </div>
+                    <div class="boxRadiusValue valuesPanelBtn valuesPanel" id="boxRadiusValueBtn">
+
+                        <input type="range" min="0" max="100" class="boxRadius" id="boxRadiusRange">
+                        <input type="text" class="input" id="boxRadius" value="0">
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="rightSideBar">
+                <pre class="cssCode" id="cssCode"></pre>
+            </div>
+        </div>
+
+        <div class="shadowWorkPanel" id="shadowWorkPanel">
+            <div class="sizeSettings">
+                <button class="shadowSize panelBtn" id="shadowSizeBtn">SIZE</button>
+            </div>
+
+            <div class="colorSettings">
+                <button class="shadowColor panelBtn" id="shadowColorBtn">COLOR</button>
+            </div>
+
+            <div class="blurSettings">
+                <button class="shadowBlur panelBtn" id="shadowBlurBtn">BLUR</button>
+            </div>
+
+            <div class="positionSettings">
+                <button class="shadowPosition panelBtn" id="shadowPositionBtn">POSITION</button>
+            </div>
+        </div>
+
+
+        <div class="boxWorkPanel" id="boxWorkPanel">
+            
+            <div class="backgroundColor">
+                <button class="backgroundBtn">BACKGROUND COLOR</button>
+                <input type="color" class="color" id="backgroundColor">
+            </div>
+
+            <div class="sizeSettings">
+                <button class="boxSize panelBtn" id="boxSizeBtn">SIZE</button>
+            </div>
+            
+            <div class="colorSettings">
+                <button class="boxColor panelBtn" id="boxColorBtn">COLOR</button>
+            </div>
+            <div class="radiusSettings">
+                <button class="boxRadius panelBtn" id="boxRadiusBtn">RADIUS</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

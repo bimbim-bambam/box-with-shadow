@@ -1,0 +1,404 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    max-width: 1920px;
+}
+
+/* :root{
+    
+} */
+
+.text{
+    padding-left: 100px;
+    border: none;
+
+    background-color:#080614;
+    color: #a8a8a8;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+.rows{
+    height: 100svh;
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #c4c4c4;
+
+}
+
+
+/* HEADER */
+
+
+.header{
+    width: 100%;
+    height: 60px;
+
+    position: fixed;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 800;
+    font-size: 24px;
+
+    border-bottom: 2px solid black;
+
+    background-color: #080614;
+    color: white;
+}
+
+
+.headerButtons{
+    display: flex;
+    padding-right: 100px;
+}
+
+.gitBtn{
+    padding: 5px 10px 5px 10px;
+    border: none;
+
+    background: none;
+    color: #a8a8a8;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 14px;
+
+    border-bottom: 2px solid #37353f;
+    transition: 0.5s;
+}
+
+.cssCodeBtn{
+    padding: 5px 10px 5px 10px;
+    margin-right: 100px;
+    border: none;
+
+    background: none;
+    color: #a8a8a8;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 14px;
+
+    border-bottom: 2px solid #37353f;
+    transition: 0.5s;
+}
+
+.cssCode{
+    width: 470px;
+    height: 160px;
+
+    top: 60px;
+    right: -100%;
+
+    border-radius: 0px 0px 0px 30px;
+
+    position: fixed;
+
+    transition: 0.7s;
+
+    color: #c4c4c4;
+    background-color: #080614;
+
+}
+
+
+
+/* PAGE */
+
+
+.page{
+    width: 100%;
+    height: 100svh;
+
+    display: grid;
+    grid-template-columns: 3fr 9fr 3fr;
+}
+
+
+/* LEFT SIDE BAR */
+
+
+.leftSideBar{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+}
+
+.btnPlace{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadowBtnsList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.shadowBtn{
+    padding: 10px 10px 10px 10px;
+    border: none;
+
+    background-color: #080614;
+    color: #a8a8a8;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 14px;
+
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: 2px solid #37353f;
+    transition: 0.5s;
+
+    position: fixed;
+    top: 60px;
+    left: 100px;
+}
+
+.settingBtn{
+    padding: 10px 10px 10px 10px;
+    border: none;
+
+    background-color: #080614;
+    color: #a8a8a8;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 14px;
+
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: 2px solid #37353f;
+    transition: 0.5s;
+
+    position: fixed;
+    top: 60px;
+    left: 400px;
+}
+
+/* RIGHT SIDE BAR */
+
+.rightSideBar{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 100px;
+}
+
+/* WORK SPACE */
+
+
+.workSpace{
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.object{
+    width: 250px;
+    height: 250px;
+    background-color: #ffffffcc;
+    border-radius: 0px;
+    
+}
+
+
+/* work Panel */
+
+.backgroundBtn{
+    border: none;
+
+    background: none;
+    color: #a8a8a8;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.backgroundColor{
+    width: 290px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: absolute;
+    left: 100px;
+}
+
+.color{
+    background: none;
+    border: none;
+}
+
+
+.shadowWorkPanel{
+    width: 100%;
+    height: 60px;
+
+    position: fixed;
+    bottom: -100%;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    font-weight: 800;
+    font-size: 24px;
+
+    background-color: #080614;
+    color: white; 
+    margin: 0px;
+    padding: 0px;
+
+    transition: 0.5s;
+}
+
+.input{
+    color: white;
+    background: none;
+    border: none;
+    width: 25px;
+    padding: 10px;
+    height: 5px;
+}
+
+.panelBtn{
+    padding: 5px 10px 5px 10px;
+    border: none;
+
+    background: none;
+    color: #a8a8a8;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 14px;
+
+    border-bottom: 2px solid #37353f;
+    transition: 0.5s;
+}
+
+.sizeSettings{
+    display: flex;
+    justify-content: center;
+}
+
+.colorSettings{
+    display: flex;
+    justify-content: center;
+}
+
+.blurSettings{
+    display: flex;
+    justify-content: center;
+}
+
+.positionSettings{
+    display: flex;
+    justify-content: center;
+}
+
+.radiusSettings{
+    display: flex;
+    justify-content: center;
+}
+
+
+.boxWorkPanel{
+    width: 100%;
+    height: 60px;
+
+    position: fixed;
+    bottom: -100%;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    font-weight: 800;
+    font-size: 24px;
+
+    background-color: #080614;
+    color: white; 
+    margin: 0px;
+    padding: 0px;
+
+    transition: 0.5s;
+}
+
+.valuesPanel{
+    width: 400px;
+    height: 40px;
+    background-color: #080614;
+    border-radius: 20px 20px 0px 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -40px;
+}
+
+.colorValue{
+    width: 100px;
+}
+
+.shadowSizeValue{
+    /* visibility: hidden; */
+    transition: 0.5s;
+}
+
+.shadowColorValue{
+    /* visibility: hidden; */
+    transition: 0.5s;
+}
+
+.shadowBlurValue{
+    /* visibility: hidden; */
+    transition: 0.5s;
+}
+
+.shadowPositionValue{
+    /* visibility: hidden; */
+    transition: 0.5s;
+}
+
+.boxSizeValue{
+    /* visibility: hidden; */
+    transition: 0.5s;
+}
+
+.boxColorValue{
+    /* visibility: hidden; */
+    transition: 0.5s;
+}
+
+.boxRadiusValue{
+    /* visibility: hidden; */
+    transition: 0.5s;
+}
+
